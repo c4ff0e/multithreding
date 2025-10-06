@@ -1,6 +1,17 @@
+import java.util.Random;
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
-// TODO: меню, выбор двух тредов
+        int[] randomMassive = new int[100];
+        Random random = new Random();
+        for (int i = 0; i < randomMassive.length; i++) {
+            randomMassive[i] = random.nextInt(100);
+        }
+        System.out.println(Arrays.toString(randomMassive));
+ 
+
+// TD: меню, выбор двух тредов
         
         Thread_1 thread1 = new Thread_1(1);
         Thread_2 thread2 = new Thread_2(2);
@@ -12,3 +23,4 @@ public class Main {
         thread4.start();
     }
 }
+
