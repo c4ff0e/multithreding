@@ -1,6 +1,6 @@
 public class Thread_2 extends Thread {
     private int threadnumber;
-    public Thread_2(int threadnumber) {
+    public Thread_2(int threadnumber, int[] randomMassive) {
         this.threadnumber = threadnumber;
     }
     @Override
