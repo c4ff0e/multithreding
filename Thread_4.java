@@ -10,7 +10,7 @@ public class Thread_4 extends Thread {
     @Override
     public void run() {
         Integer firstEven = null;
-        System.out.println("Hello World от потока №" + threadnumber + " " + randomMassive[0]);
+        System.out.println("Hello World от потока №" + threadnumber);
         for (int i = 0; i < randomMassive.length; i++) {
             int value = randomMassive[i];
             if (value % 2 != 0) {
