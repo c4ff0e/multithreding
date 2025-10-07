@@ -21,7 +21,7 @@ public class Thread_4 extends Thread {
             continue;
            }
            int sum = firstEven + value;
-           System.out.println(sum);
+           System.out.println("Thread4:" + sum);
            firstEven = null;
         }
         
