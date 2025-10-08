@@ -11,13 +11,18 @@ public class Main {
         }
         System.out.println(Arrays.toString(randomMassive));
  
-
-// TD: меню, выбор двух тредов
-        
+        class MainThread extends Thread {
+           String text = "dubceac valerian cr-233";
+           @Override
+           public void run() {
+            System.out.println(text);
+           }
+        }
         Thread_1 thread1 = new Thread_1(1, randomMassive);
         Thread_2 thread2 = new Thread_2(2, randomMassive);
         Thread_3 thread3 = new Thread_3(3, randomMassive);
         Thread_4 thread4 = new Thread_4(4, randomMassive);
+        MainThread mainThread = new MainThread();
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Выбор варианта: 1 - Thread1 и Thread2 (вариант 8), 2 - Thread3 и Thread4 (вариант 7)");
@@ -26,9 +31,11 @@ public class Main {
         if (choice == 1) {
         thread1.start();
         thread2.start();
+        mainThread.start();
         } else if (choice == 2) {
             thread3.start();
             thread4.start();
+            mainThread.start();
         }
     }
 }
