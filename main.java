@@ -23,7 +23,7 @@ public class Main {
         Thread_3 thread3 = new Thread_3(3, randomMassive);
         Thread_4 thread4 = new Thread_4(4, randomMassive);
         MainThread mainThread = new MainThread();
-
+//commetest
         Scanner scanner = new Scanner(System.in);
         System.out.println("Выбор варианта: 1 - Thread1 и Thread2 (вариант 8), 2 - Thread3 и Thread4 (вариант 7)");
         int choice = scanner.nextInt();
